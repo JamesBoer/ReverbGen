@@ -29,7 +29,7 @@ namespace RevGen
 
 	DistArray CreateHistogramFromDistances(std::vector<float> distances)
 	{
-		DistArray histogram;
+		DistArray histogram {};
 		for (auto d : distances)
 		{
 			for (size_t i = 0; i < DistanceBinValues.size(); ++i)

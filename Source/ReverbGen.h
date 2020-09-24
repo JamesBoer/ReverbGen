@@ -60,8 +60,8 @@ namespace RevGen
 	struct SignatureData
 	{
 		size_t presetIndex = InvalidIndex;
-		DistArray distances;
-		AbsCoeffArray absorbCoeffs;
+		DistArray distances {};
+		AbsCoeffArray absorbCoeffs {};
 	};
 
 	DistArray CreateHistogramFromDistances(std::vector<float> distances);
